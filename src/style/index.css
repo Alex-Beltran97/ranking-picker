@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+:root{
+  --primary-color: hsl(25, 97%, 53%);
+}
+
+body{
+  font-size: 15px;
+  background-color: rgb(20, 21, 25);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main{
+  margin: auto 1.5rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background: rgb(23,30,40);
+  background: linear-gradient(52deg, rgba(23,30,40,1) 0%, rgba(23,30,40,1) 35%);
+  color: white;
+  border-radius: 1rem;
+}
+
+
+.info-container{
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-container > p{
+  color: hsl(217, 12%, 63%);
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.circle{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 0.8rem;
+  background-color: rgb(38, 47, 56);
+  color: hsl(217, 12%, 63%);
+  border: none;
+}
+
+.form-btn-container{
+  display: flex;
+  align-items: center;  
+  justify-content: space-around;
+  height: 4rem;
+}
+
+.btn-option{
+  cursor: pointer;
+}
+
+.btn-option:focus{
+  border: 1px solid white;
+}
+
+.btn-submit{
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-submit:active{
+  background-color: hsl(25, 92%, 59%);
+}
+
+footer{
+  color: white;
+}
+
+.ico-thanks{
+  width: 136px;
+}
+
+.thanks-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 18rem;
+}
+
+.thanks-container h4{
+  color: var(--primary-color);
+  font-weight: 200;
+  background-color: rgb(38, 47, 56);
+  padding: 0.4rem;
+  border-radius: 1rem;
+}
+
+.thanks-container p{
+  color: hsl(217, 12%, 63%);
+  font-size: 0.9em;
+  font-weight: 200;
+  text-align: center;
+}
+
+@media (min-width: 1279px) {
+  main{
+    margin: auto 24rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  main{
+    margin: auto 32rem;
+  }
+}

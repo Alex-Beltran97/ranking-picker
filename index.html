@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="./src/style/index.css" />
+</head>
+<body>
+  <main class="container" id="card-survey">
+    <div class="info-container">
+      <img class="circle" src="./images/icon-star.svg" alt="star">
+      <h1>How did we do?</h1>
+      
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+    </div>
+
+    <div id="form">
+      <div class="form-btn-container">
+        <button id="btn-ranking" class="circle btn-option" value="1">1</button>
+        <button id="btn-ranking" class="circle btn-option" value="2">2</button>
+        <button id="btn-ranking" class="circle btn-option" value="3">3</button>
+        <button id="btn-ranking" class="circle btn-option" value="4">4</button>
+        <button id="btn-ranking" class="circle btn-option" value="5">5</button>
+      </div>
+      <button id="submit" class="btn-submit">Submit</button>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Alex-Beltran97?tab=repositories">Alex Beltran</a>.
+  </footer>
+  
+  <template id="template">
+    <div class="thanks-container">
+      <img class="ico-thanks" src="./images/illustration-thank-you.svg" alt="invoice">
+      <h4>You selected <span id="answer"></span> out of 5</h4>
+
+      <h1>Thank you!</h1>
+
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get ib touch.</p>
+
+      <button id="return" class="btn-submit">Return</button>
+    </div>
+  </template>
+  <script src="./src/index.js" type="module"></script>
+</body>
+</html>
